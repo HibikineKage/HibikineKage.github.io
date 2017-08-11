@@ -16,12 +16,19 @@
     <li><a href="https://hibikinekage.github.io/redux-advanced">Redux Advanced Tutorial - Subreddit Headlines</a></li>
   </ul>
   <article>
-    <h3>pixivブックマークレット</h3>
+    <h3>pixivブックマークレット v1.1</h3>
     <p>pixivの自分のユーザーの作品を消すブックマークレットです</p>
     <p>ブックマークに登録しておいてクリックすれば自分の作品が検索結果から消えます</p>
     <p>いちいちクリックしなきゃいけなくて面倒なのでそのうち気が向いたら拡張機能化します</p>
     <p>下のリンクをドラッグアンドドロップなどでブックマークに登録してください</p>
-    <a href="javascript:(()=>{if('www.pixiv.net'!==location.hostname)alert('\u3053\u306E\u30EA\u30F3\u30AF\u3092\u30D6\u30C3\u30AF\u30DE\u30FC\u30AF\u306B\u767B\u9332\u3057\u3001pixiv\u4E0A\u3067\u5B9F\u884C\u3057\u3066\u304F\u3060\u3055\u3044');else{const a=document.getElementsByClassName('image-item');for(const b of a){const c=b.getElementsByClassName('_thumbnail')[0],d=c.getAttribute('data-user-id');d===pixiv.user.id&&(b.style.display='none')}}})();" >自分の作品を消す</a>
+    <a href="javascript:'use strict';(function(){if('www.pixiv.net'!==location.hostname)alert('\u3053\u306E\u30EA\u30F3\u30AF\u3092\u30D6\u30C3\u30AF\u30DE\u30FC\u30AF\u306B\u767B\u9332\u3057\u3001pixiv\u4E0A\u3067\u5B9F\u884C\u3057\u3066\u304F\u3060\u3055\u3044');else{var e=document.getElementsByClassName('image-item'),_iteratorNormalCompletion=!0,_didIteratorError=!1,_iteratorError=void 0;try{for(var g,f=e[Symbol.iterator]();!(_iteratorNormalCompletion=(g=f.next()).done);_iteratorNormalCompletion=!0){var h=g.value,i=h.getElementsByClassName('_thumbnail')[0],j=i.getAttribute('data-user-id');j===pixiv.user.id&&(h.style.display='none')}}catch(k){_didIteratorError=!0,_iteratorError=k}finally{try{!_iteratorNormalCompletion&&f.return&&f.return()}finally{if(_didIteratorError)throw _iteratorError}}}})();" >自分の作品を消す</a>
+    <article>
+      <h4>更新履歴</h4>
+      <table>
+        <tr></td>v1.1(12/08/2017)</td><td><p>対応ブラウザが(たぶん)増えました、ES5が動く環境ならばたぶん動きます</p><p>現環境のEdge, Chrome, Firefoxで確認済みです</p></td></tr>
+        <tr></td>v1.0(11/08/2017)</td><td>とりあえず公開</td></tr>
+      </table>
+    </article>
   </article>
   <h2>Link</h2>
   <ul>
